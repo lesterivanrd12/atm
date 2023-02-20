@@ -1,0 +1,31 @@
+
+* {
+    background-color: #000;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px;
+}
+
+#form-input, textarea {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #ececec;
+}
+
+#prime-button {
+    position: absolute;
+    top: 800px;
+    left: 950px;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 60px;
+    border: solid #fff 1px;
+    color: #fff;
+}
