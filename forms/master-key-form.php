@@ -23,7 +23,6 @@
                     $master_key = $_POST['master-key'];
                 }
                 
-
-                echo $master_key;
+                
             ?>
         </form>

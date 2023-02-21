@@ -1,3 +1,5 @@
+<?php require('utilities/conn.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
