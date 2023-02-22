@@ -1,6 +1,6 @@
         
         
-        <form action="" method="post" name="">
+        <form action="utilities/master-key-auth.php" method="post" name="">
             <input
                 type="text"
                 name="master-key"
@@ -12,17 +12,6 @@
             <input
                 type="submit"
                 value="Submit"
-                name="submit"
-                
+                name="submit"  
             >
-
-
-            <?php 
-            
-                if(isset($_POST['submit'])) {
-                    $master_key = $_POST['master-key'];
-                }
-                
-                
-            ?>
         </form>
