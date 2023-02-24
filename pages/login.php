@@ -1,3 +1,5 @@
+<?php require('utils/conn.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
     
     <div class="login-container">   
         <h1>Enter 16 digit master key</h1>
-        <form action="utilities/master-key-auth.php" method="post" name="">
+        <form action="utils/master-key-auth.php" method="post" name="">
             <input
                 type="text"
                 name="master-key"
