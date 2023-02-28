@@ -18,9 +18,11 @@
                 $_SESSION['master_key'] = $row['master_key'];
                 $_SESSION['login'] = true;
 
-            } header('../pages/start.php');
+            }
+            header('Location: ../pages/start.php');
+
         } else {
-                echo("Invalid Masker Key Combination!");
+                echo("Invalid Masker Key Combination! <a href='../pages/login.php'>Try again</a>");
         }
 
     $conn->close();
