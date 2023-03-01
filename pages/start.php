@@ -4,11 +4,9 @@
     if(isset($_SESSION['login']) == FALSE ) {
         header('Location: ../pages/login.php');
     } 
-    include('../components/header.php');
-    
-    
 ?>
 
+    <?php include('../components/header.php'); ?>
     <div class="start-container">
         <h1>Hello World!</h1>
         <a href="../pages/logout.php">Logout</a>
