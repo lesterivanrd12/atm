@@ -21,7 +21,7 @@
     $result = $conn->query($sql);
 
     if($result) {
-        echo("Account created!");
+        echo("Account created <a href='../pages/login.php'>Login</a>!");
     } else {
         echo("Error: " . mysqli_error($result));
     }
