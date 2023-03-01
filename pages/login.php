@@ -9,8 +9,8 @@
 <body>
     
     <div class="login-container">   
-        <h1>Enter 16 digit master key</h1>
-        <form action="../utils/login-auth.php" method="post" name="">
+        <h1>Enter 9 digit master key</h1>
+        <form action="../utils/login-auth.php" method="post" id="login-form">
             <input
                 type="text"
                 name="master_key"

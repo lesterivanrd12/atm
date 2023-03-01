@@ -16,7 +16,7 @@
     $city = $_POST['city'];
     $barangay = $_POST['barangay'];
     
-    // Create query
+    // Create INSERT INTO query
     $sql = "INSERT INTO `users`(`first_name`, `middle_name`, `last_name`, `birthdate`, `phone`, `email`, `password`, `master_key`, `region`, `province`, `city`, `barangay`) VALUES ('$fname','$mname','$lname','$birthdate','$phone','$email','$password','$master_key','$region','$province','$city','$barangay')";
     $result = $conn->query($sql);
 

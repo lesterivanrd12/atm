@@ -1,12 +1,12 @@
 <?php 
-
     session_start();
-
+    // Check if login condition is false, redirect users to Login page
     if(isset($_SESSION['login']) == FALSE ) {
         header('Location: ../pages/login.php');
-    }
-
-    session_destroy();
+    } 
+    include('../components/header.php');
+    
+    
 ?>
 
     <div class="start-container">
