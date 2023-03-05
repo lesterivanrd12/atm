@@ -6,7 +6,7 @@
     $database = 'atm';
 
     
-    $conn = mysqli_connect($server, $username, $password, $database) or die("Error: ". mysqli_connect_error($conn));
+    $conn = mysqli_connect($server, $username, $password, $database) or die("Error: ". mysqli_connect_error());
 
     if($conn) {
         echo("<script>console.log('Connected!')</script>");
