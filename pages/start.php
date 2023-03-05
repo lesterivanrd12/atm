@@ -20,7 +20,7 @@
 <body>
     
     <div class="start-container">
-        <a id="logout-account-btn" href="../pages/logout.php">Logout</a>
+        <a id="logout-account-btn" href="../utils/logout.php">Logout</a>
     </div>
 
 </body>

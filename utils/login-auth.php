@@ -1,8 +1,13 @@
 
 <?php
-            
+    
     session_start();
     require('../utils/conn.php');
+
+    // Check if login condition is false, redirect users to Login page
+    if(isset($_SESSION['login']) == FALSE ) {
+        header('Location: ../pages/login.php');
+    } 
 
     // Create variable/s
     $master_key = $_POST['master_key'];
@@ -28,24 +33,3 @@
     $conn->close();
                 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: #1161c3;
-            color: #fff;
-            margin: 10px;
-        }
-    </style>
-</head>
-<body>
-    
-</body>
-</html>
