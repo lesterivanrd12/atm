@@ -20,7 +20,11 @@
 <body>
     
     <div class="start-container">
-        <a id="logout-account-btn" href="../utils/logout.php">Logout</a>
+        <div class="left-panel-column">
+            <a id="main-btn" href="../pages/account.php">Check Balance</a>
+            <a id="main-btn" href="">Cash Withdrawal</a>
+            <a id="main-btn" href="../utils/logout.php">Logout</a>
+        </div>
     </div>
 
 </body>
