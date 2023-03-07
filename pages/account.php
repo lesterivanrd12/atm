@@ -1,13 +1,13 @@
 <?php 
     session_start();
     require('../utils/conn.php');
+    require('../utils/account-auth.php');
     // Check if login condition is false, redirect users to Login page
-    if(isset($_SESSION['login']) == FALSE ) {
-        header('Location: ../pages/login.php');
-    }
+    // if(isset($_SESSION['login']) == FALSE ) {
+    //     header('Location: ../pages/login.php');
+    // }
 
-    $sql = "SELECT * FROM `users`";
-    $result = $conn->query($sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -19,13 +19,14 @@
     <title>Account</title>
 </head>
 <body>
+    
+    <?php if(!isset($_SESSION['master_key'])): header('Location: ../pages/login.php') ?>
+    <?php else: ?>
+        <h1>Account: <?php if(isset($fname, $mname, $lname)) echo $fname." ".$mname." ".$lname ; ?></h1>
+        <h1>Balance: P<?php if(isset($balance)) echo $balance?></h1>
+        <a id="main-btn" href="../pages/start.php">Other Transactions</a>
+    <?php endif ?>
+    
 
-    <?php  while($row = $result->fetch_assoc()) { ?>
-        <div class="account-container">
-            <h1>ACCOUNT: <?php echo $row['first_name']." ".$row['middle_name']." ".$row['last_name']?></h1>
-            <h1>BALANCE: P<?php echo $row['wallet_balance'] ?></h1>
-        </div>
-    <?php } ?>
-    <a id="main-btn" href="../utils/logout.php">Logout</a>
 </body>
 </html>
