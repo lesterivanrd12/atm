@@ -4,11 +4,6 @@
     session_start();
     require('../utils/conn.php');
 
-    // Check if login condition is false, redirect users to Login page
-    // if(isset($_SESSION['login']) == FALSE ) {
-    //     header('Location: ../pages/login.php');
-    // }  Note: Causes bug   
-
     // Create variable/s
     $master_key = $_POST['master_key'];
 

@@ -20,7 +20,7 @@
                     $mname = $row['middle_name'];
                     $lname = $row['last_name'];
                     $balance = $row['wallet_balance'];
-                } var_dump($sql);
+                }
                 
             } else {
                 echo("Error! You need to login. <a href='../pages/login.php'>Login</a>");
